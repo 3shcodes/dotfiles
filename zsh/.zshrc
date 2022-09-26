@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
+alias vim="nvim -u /home/vik/dotfiles/nvim/init.vim"
 alias btu="sudo brightnessctl set +5%"
 alias btd="sudo brightnessctl set 5%-"
+alias i3bc="vim ~/dotfiles/i3/config"
+alias zsbc="vim ~/dotfiles/zsh/.zshrc"
+alias vimrc="vim ~/dotfiles/nvim/init.vim"
