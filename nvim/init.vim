@@ -1,4 +1,3 @@
-syntax on
 set relativenumber
 set guicursor=
 set tabstop=4 softtabstop=4
