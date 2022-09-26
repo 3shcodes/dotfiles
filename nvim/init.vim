@@ -28,7 +28,6 @@ call plug#end()
 
 colorscheme gruvbox
 highlight Normal guibg=none
-# ethetho ennangal vanrhu enakul thukam ponathe
 
 let mapleader=" "
 
