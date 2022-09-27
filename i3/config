@@ -197,6 +197,10 @@ bar {
     position top
 	status_command /home/vik/.config/i3/bumblebee/bumblebee-status -m cpu memory battery time date \
 		pasink pasource -p time.format="%H:%M" -t gruvbox-powerline
+    colors{
+        background #282828
+        focused_workspace #b8bb26 #b8bb26  #000000
+    }
 }
 
 exec_always nitrogen --restore
