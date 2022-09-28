@@ -41,6 +41,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+
+# Use pactl to adjust brightness.
+bindsym XF86MonBrightnessUp exec --no-startup-id  brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id  brightnessctl set 5%-
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -197,11 +202,11 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 #For System shutdown and shit
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id ./misc/i3exit.sh lock, mode "default"
-    bindsym e exec --no-startup-id ./misc/i3exit.sh logout, mode "default"
-    bindsym s exec --no-startup-id ./misc/i3exit.sh suspend, mode "default"
-    bindsym h exec --no-startup-id ./misc/i3exit.sh hibernate, mode "default"
-    bindsym r exec --no-startup-id ./misc/i3exit.sh reboot, mode "default"
+    bindsym l exec --no-startup-id ./dotfiles/i3/i3exit.sh lock, mode "default"
+    bindsym e exec --no-startup-id   ./dotfiles/i3/i3exit.sh logout, mode "default"
+    bindsym s exec --no-startup-id   ./dotfiles/i3/i3exit.sh suspend, mode "default"
+    bindsym h exec --no-startup-id   ./dotfiles/i3/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id   ./dotfiles/i3/i3exit.sh reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # back to normal: Enter or Escape
