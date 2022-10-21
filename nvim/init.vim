@@ -33,4 +33,3 @@ let mapleader=" "
 
 nnoremap <leader>ps <cmd>lua require('telescope.builtin').find_files()<cr>
 au filetype go inoremap <buffer> . .<C-x><C-o>
-
