@@ -99,17 +99,29 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim -u /home/vik/dotfiles/nvim/init.vim"
+# alias vim="nvim -u /home/vik/dotfiles/nvim/init.vim"
+alias vim="nvim"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias btu="sudo brightnessctl set +5%"
 alias btd="sudo brightnessctl set 5%-"
 alias i3bc="vim ~/dotfiles/i3/config"
 alias zsbc="vim ~/dotfiles/zsh/.zshrc"
-alias vimrc="vim ~/dotfiles/nvim/init.vim"
+alias vimrc="vim ~/.config/nvim/"
 # alias la="ls -a"
-alias dsa="cd ~/Documents/Playground/ds/"
+alias pg="cd ~/Documents/Playground/"
 alias pros="cd ~/Documents/Projects/"
 alias emdets="gedit ~/.emdets"
 alias wanime="ranger /media/vik/SharedDrive/Anime"
 alias wmovies="ranger /media/vik/SharedDrive/Movies"
 alias sdcard="ranger /media/vik/SharedDrive/"
+alias andStd="~/Android/android-studio/bin/studio.sh"
+alias godot="~/Apps/Godot_v3.5.1-stable_x11.64"
+alias attach="~/myscripts/tmuxOpener.sh"
 # alias mysqlu="mysql -u forTeam -prmkpullingos"
+#
+#
+#
+# Paths
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
