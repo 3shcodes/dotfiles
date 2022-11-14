@@ -244,3 +244,5 @@ client.background       #ffffff
 
 exec_always nitrogen --restore
 exec_always --no-startup-id compton
+for_window [class="xpad" instance="xpad"] floating enable
+

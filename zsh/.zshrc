@@ -117,6 +117,7 @@ alias sdcard="ranger /media/vik/SharedDrive/"
 alias andStd="~/Android/android-studio/bin/studio.sh"
 alias godot="~/Apps/Godot_v3.5.1-stable_x11.64"
 alias attach="~/myscripts/tmuxOpener.sh"
+alias msc="vim ~/my/schedule"
 # alias mysqlu="mysql -u forTeam -prmkpullingos"
 #
 #
